@@ -14,42 +14,10 @@
         applications.
     </description>
 
-    <modules>
-        <module>docs</module>
-        <module>dropwizard-bom</module>
-        <module>dropwizard-core</module>
-        <module>dropwizard-client</module>
-        <module>dropwizard-db</module>
-        <module>dropwizard-jdbi</module>
-        <module>dropwizard-jdbi3</module>
-        <module>dropwizard-migrations</module>
-        <module>dropwizard-hibernate</module>
-        <module>dropwizard-auth</module>
-        <module>dropwizard-example</module>
-        <module>dropwizard-forms</module>
-        <module>dropwizard-views</module>
-        <module>dropwizard-views-freemarker</module>
-        <module>dropwizard-views-mustache</module>
-        <module>dropwizard-testing</module>
-        <module>dropwizard-util</module>
-        <module>dropwizard-jackson</module>
-        <module>dropwizard-validation</module>
-        <module>dropwizard-configuration</module>
-        <module>dropwizard-logging</module>
-        <module>dropwizard-metrics</module>
-        <module>dropwizard-metrics-graphite</module>
-        <module>dropwizard-jersey</module>
-        <module>dropwizard-jetty</module>
-        <module>dropwizard-servlets</module>
-        <module>dropwizard-lifecycle</module>
-        <module>dropwizard-assets</module>
-        <module>dropwizard-archetypes</module>
-        <module>dropwizard-benchmarks</module>
-        <module>dropwizard-http2</module>
-        <module>dropwizard-request-logging</module>
-        <module>dropwizard-e2e</module>
-        <module>dropwizard-json-logging</module>
-    </modules>
+
+
+
+
 
     <properties>
         <dropwizard.url>http://www.dropwizard.io/${project.version}</dropwizard.url>
@@ -71,120 +39,7 @@
         <mockito.version>2.15.0</mockito.version>
     </properties>
 
-    <developers>
-        <developer>
-            <name>Coda Hale</name>
-            <email>coda.hale@gmail.com</email>
-            <timezone>America/Los_Angeles</timezone>
-            <roles>
-                <role>architect</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Nick Telford</name>
-            <email>nick.telford@gmail.com</email>
-            <timezone>Europe/London</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Graham O'Regan</name>
-            <email>graham.oregan@ellisonbrookes.com</email>
-            <timezone>Europe/London</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Ryan Kennedy</name>
-            <email>rckenned@gmail.com</email>
-            <timezone>America/Los_Angeles</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Camille Fournier</name>
-            <email>camille@apache.org</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Carlo Barbara</name>
-            <email>carlo.barbara@gmail.com</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Matt Veitas</name>
-            <email>mveitas@gmail.com</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Ryan Tenney</name>
-            <email>ryan@10e.us</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Jochen Schalanda</name>
-            <email>jochen@schalanda.name</email>
-            <timezone>Europe/Berlin</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Glenn McAllister</name>
-            <email>glenn.mcallister@gmail.com</email>
-            <timezone>America/Toronto</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Nick Babcock</name>
-            <email>nbabcock19@hotmail.com</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Justin Plock</name>
-            <email>jplock@gmail.com</email>
-            <timezone>America/New_York</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Artem Prigoda</name>
-            <email>prigoda.artem@ya.ru</email>
-            <timezone>Europe/Berlin</timezone>
-            <roles>
-                <role>committer</role>
-            </roles>
-        </developer>
-    </developers>
 
-    <licenses>
-        <license>
-            <name>Apache License 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
 
     <scm>
         <connection>scm:git:git://github.com/dropwizard/dropwizard.git</connection>
@@ -475,6 +330,12 @@
             <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>1.1.0</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -566,6 +427,11 @@
         </pluginManagement>
 
         <plugins>
+
+
+
+
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -577,13 +443,13 @@
                                 <DependencyConvergence />
                                 <bannedDependencies>
                                     <excludes>
-                                        <!-- This should not exist as it will force SLF4J calls to be delegated to log4j -->
+
                                         <exclude>org.slf4j:slf4j-log4j12</exclude>
-                                        <!-- This should not exist as it will force SLF4J calls to be delegated to jul -->
+
                                         <exclude>org.slf4j:slf4j-jdk14</exclude>
-                                        <!-- Ensure only the slf4j binding for logback is on the classpath -->
+
                                         <exclude>log4j:log4j</exclude>
-                                        <!-- As recommended from the slf4j guide, exclude commons-logging -->
+                                       
                                         <exclude>commons-logging:commons-logging</exclude>
                                     </excludes>
                                 </bannedDependencies>
@@ -595,6 +461,12 @@
                     </execution>
                 </executions>
             </plugin>
+
+    -->
+
+
+
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>

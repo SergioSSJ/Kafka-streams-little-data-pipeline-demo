@@ -31,9 +31,9 @@ server:
 #  hardNofileLimit: 1000
   applicationConnectors:
     - type: http
-      port: 8080
+      port: 8089
     - type: https
-      port: 8443
+      port: 8445
       keyStorePath: example.keystore
       keyStorePassword: example
     #this requires the alpn-boot library on the JVM's boot classpath
@@ -43,9 +43,9 @@ server:
     #  keyStorePassword: example
   adminConnectors:
     - type: http
-      port: 8085
+      port: 8088
     - type: https
-      port: 8444
+      port: 8446
       keyStorePath: example.keystore
       keyStorePassword: example
 
@@ -90,7 +90,7 @@ metrics:
   reporters:
     - type: graphite
       host: localhost
-      port: 8090
+      port: 2003
       prefix: example
       frequency: 1m
 #8090 was 2003

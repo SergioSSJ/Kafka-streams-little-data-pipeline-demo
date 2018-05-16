@@ -1,0 +1,30 @@
+# Maven
+target/
+dropwizard-consumer/target/
+dropwizard-producer/target/
+dropwizard-producer/src/main/front/node/
+dropwizard-producer/src/main/front/node_modules/
+dropwizard-producer/src/main/front/build/
+
+dependency-reduced-pom.xml
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# IntelliJ IDEA
+.idea/
+dropwizard-producer/.idea/
+dropwizard-consumer/.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+nb-configuration.xml
+atlassian-ide-plugin.xml
+
+logs

@@ -1,20 +1,20 @@
-INFO  [2018-05-03 13:38:16,190] org.eclipse.jetty.util.log: Logging initialized @11678ms to org.eclipse.jetty.util.log.Slf4jLog
-INFO  [2018-05-03 13:38:16,703] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2018-05-03 13:38:16,708] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2018-05-03 13:38:16,709] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
-INFO  [2018-05-03 13:38:16,822] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.example.helloworld.core.Person]
-INFO  [2018-05-03 13:38:17,034] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-INFO  [2018-05-03 13:38:17,057] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@3c9f4376
-INFO  [2018-05-03 13:38:17,058] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@65db548
-INFO  [2018-05-03 13:38:17,058] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@3feebf9c
-INFO  [2018-05-03 13:38:17,058] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@632d4cf2
-INFO  [2018-05-03 13:38:17,059] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@498a4d62
-INFO  [2018-05-03 13:38:17,059] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@5cbe95b1
-INFO  [2018-05-03 13:38:17,060] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@70485aa
-INFO  [2018-05-03 13:38:17,060] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@401926df
-INFO  [2018-05-03 13:38:17,060] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@2d07aacc
-INFO  [2018-05-03 13:38:17,068] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
-INFO  [2018-05-03 13:38:17,323] io.dropwizard.server.ServerFactory: Starting hello-world
+INFO  [2018-05-16 14:21:30,241] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-05-16 14:21:30,257] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-05-16 14:21:30,259] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: home for path /*
+INFO  [2018-05-16 14:21:30,522] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: login for path /login/*
+INFO  [2018-05-16 14:21:30,600] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.example.helloworld.core.Person]
+INFO  [2018-05-16 14:21:30,977] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+INFO  [2018-05-16 14:21:31,006] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@1e606f64
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@466fedfa
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@16391278
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@2807cf3
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@1760e594
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@1dca62c2
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@399f5daf
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@271e851e
+INFO  [2018-05-16 14:21:31,007] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@147c00aa
+INFO  [2018-05-16 14:21:31,014] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-05-16 14:21:31,234] io.dropwizard.server.ServerFactory: Starting hello-world
                            web-scale hello world dP for the web
                                                  88
   .d8888b. dP.  .dP .d8888b. 88d8b.d8b. 88d888b. 88 .d8888b.
@@ -24,53 +24,53 @@ INFO  [2018-05-03 13:38:17,323] io.dropwizard.server.ServerFactory: Starting hel
                                         88
                                         dP
 
-INFO  [2018-05-03 13:38:17,721] org.eclipse.jetty.setuid.SetUIDListener: Opened application@119c156a{HTTP/1.1,[http/1.1]}{0.0.0.0:60143}
-INFO  [2018-05-03 13:38:17,722] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@379ae4d8{HTTP/1.1,[http/1.1]}{0.0.0.0:60144}
-INFO  [2018-05-03 13:38:17,729] org.eclipse.jetty.server.Server: jetty-9.4.8.v20171121, build timestamp: 2017-11-21T15:27:37-06:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
-INFO  [2018-05-03 13:38:17,848] org.eclipse.jetty.server.AbstractConnector: Started application@119c156a{HTTP/1.1,[http/1.1]}{0.0.0.0:60143}
-INFO  [2018-05-03 13:38:17,851] org.eclipse.jetty.server.AbstractConnector: Started admin@379ae4d8{HTTP/1.1,[http/1.1]}{0.0.0.0:60144}
-ERROR [2018-05-03 13:38:17,851] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
-! java.lang.IllegalStateException: Multiple servlets map to path /*: assets[mapped:JAVAX_API:null],io.dropwizard.jersey.setup.JerseyServletContainer-2a44f50e[mapped:EMBEDDED:null]
-! at org.eclipse.jetty.servlet.ServletHandler.updateMappings(ServletHandler.java:1430)
+INFO  [2018-05-16 14:21:31,662] org.eclipse.jetty.setuid.SetUIDListener: Opened application@b19bee6{HTTP/1.1,[http/1.1]}{0.0.0.0:52980}
+INFO  [2018-05-16 14:21:31,662] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@21266057{HTTP/1.1,[http/1.1]}{0.0.0.0:52981}
+INFO  [2018-05-16 14:21:31,675] org.eclipse.jetty.server.Server: jetty-9.4.10.v20180503; built: 2018-05-03T15:56:21.710Z; git: daa59876e6f384329b122929e70a80934569428c; jvm 1.8.0_151-b12
+INFO  [2018-05-16 14:21:31,754] org.eclipse.jetty.server.AbstractConnector: Started application@b19bee6{HTTP/1.1,[http/1.1]}{0.0.0.0:52980}
+INFO  [2018-05-16 14:21:31,758] org.eclipse.jetty.server.AbstractConnector: Started admin@21266057{HTTP/1.1,[http/1.1]}{0.0.0.0:52981}
+ERROR [2018-05-16 14:21:31,759] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! java.lang.IllegalStateException: Multiple servlets map to path /*: home[mapped:JAVAX_API:null],io.dropwizard.jersey.setup.JerseyServletContainer-75e058d0[mapped:EMBEDDED:null]
+! at org.eclipse.jetty.servlet.ServletHandler.updateMappings(ServletHandler.java:1433)
 ! at org.eclipse.jetty.servlet.ServletHandler.doStart(ServletHandler.java:153)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.handler.ScopedHandler.doStart(ScopedHandler.java:120)
+! at org.eclipse.jetty.server.handler.ScopedHandler.doStart(ScopedHandler.java:123)
 ! at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:844)
-! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:370)
 ! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
-! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:287)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
 ! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:101)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:115)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:403)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
 ! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.server.Server.start(Server.java:418)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:138)
+! at org.eclipse.jetty.server.Server.start(Server.java:419)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:108)
 ! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.Server.doStart(Server.java:385)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:386)
 ! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
 ! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
 ! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
@@ -89,150 +89,31 @@ ERROR [2018-05-03 13:38:17,851] io.dropwizard.cli.ServerCommand: Unable to start
 ! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
 ! at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
 ! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-INFO  [2018-05-03 13:38:17,873] org.eclipse.jetty.server.AbstractConnector: Stopped application@119c156a{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
-INFO  [2018-05-03 13:38:17,875] org.eclipse.jetty.server.AbstractConnector: Stopped admin@379ae4d8{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
-INFO  [2018-05-03 13:38:17,882] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@74004280{/,null,UNAVAILABLE}
-INFO  [2018-05-03 13:38:19,733] org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:38:21,232] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:38:22,212] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:38:22,320] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:38:22,321] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:38:22,756] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:38:22,763] org.glassfish.grizzly.http.server.HttpServer: [HttpServer] Started.
-INFO  [2018-05-03 13:38:23,782] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:38:24,110] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
-INFO  [2018-05-03 13:38:24,139] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:38:24,139] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:38:24,139] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:38:24,139] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:38:24,145] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:38:24,145] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-1] Started.
-INFO  [2018-05-03 13:38:24,179] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:38:24,372] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
-INFO  [2018-05-03 13:38:24,381] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:38:24,381] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:38:24,381] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:38:24,382] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:38:24,395] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:38:24,395] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-2] Started.
-INFO  [2018-05-03 13:38:24,426] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:38:24,622] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:25,646] org.eclipse.jetty.util.log: Logging initialized @5799ms to org.eclipse.jetty.util.log.Slf4jLog
-INFO  [2018-05-03 13:41:25,838] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2018-05-03 13:41:25,842] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2018-05-03 13:41:25,844] io.dropwizard.assets.AssetsBundle: Registering AssetBundle with name: assets for path /*
-INFO  [2018-05-03 13:41:25,919] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.example.helloworld.core.Person]
-INFO  [2018-05-03 13:41:26,315] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-INFO  [2018-05-03 13:41:26,344] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@2487e20
-INFO  [2018-05-03 13:41:26,344] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@517fbf62
-INFO  [2018-05-03 13:41:26,345] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@71e7830a
-INFO  [2018-05-03 13:41:26,346] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@2c3f43d1
-INFO  [2018-05-03 13:41:26,347] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@6e981e78
-INFO  [2018-05-03 13:41:26,347] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@3c27f72
-INFO  [2018-05-03 13:41:26,348] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@6181bc4a
-INFO  [2018-05-03 13:41:26,349] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@1ba35152
-INFO  [2018-05-03 13:41:26,349] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@2673487b
-INFO  [2018-05-03 13:41:26,354] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
-INFO  [2018-05-03 13:41:26,405] io.dropwizard.server.ServerFactory: Starting hello-world
-                           web-scale hello world dP for the web
-                                                 88
-  .d8888b. dP.  .dP .d8888b. 88d8b.d8b. 88d888b. 88 .d8888b.
-  88ooood8  `8bd8'  88'  `88 88'`88'`88 88'  `88 88 88ooood8
-  88.  ...  .d88b.  88.  .88 88  88  88 88.  .88 88 88.  ...
-  `88888P' dP'  `dP `88888P8 dP  dP  dP 88Y888P' dP `88888P'
-                                        88
-                                        dP
-
-INFO  [2018-05-03 13:41:27,014] org.eclipse.jetty.setuid.SetUIDListener: Opened application@56a1744f{HTTP/1.1,[http/1.1]}{0.0.0.0:60459}
-INFO  [2018-05-03 13:41:27,014] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@48e2a177{HTTP/1.1,[http/1.1]}{0.0.0.0:60460}
-INFO  [2018-05-03 13:41:27,024] org.eclipse.jetty.server.Server: jetty-9.4.8.v20171121, build timestamp: 2017-11-21T15:27:37-06:00, git hash: 82b8fb23f757335bb3329d540ce37a2a2615f0a8
-INFO  [2018-05-03 13:41:27,306] org.eclipse.jetty.server.AbstractConnector: Started application@56a1744f{HTTP/1.1,[http/1.1]}{0.0.0.0:60459}
-INFO  [2018-05-03 13:41:27,312] org.eclipse.jetty.server.AbstractConnector: Started admin@48e2a177{HTTP/1.1,[http/1.1]}{0.0.0.0:60460}
-ERROR [2018-05-03 13:41:27,312] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
-! java.lang.IllegalStateException: Multiple servlets map to path /*: assets[mapped:JAVAX_API:null],io.dropwizard.jersey.setup.JerseyServletContainer-380850e8[mapped:EMBEDDED:null]
-! at org.eclipse.jetty.servlet.ServletHandler.updateMappings(ServletHandler.java:1430)
-! at org.eclipse.jetty.servlet.ServletHandler.doStart(ServletHandler.java:153)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.handler.ScopedHandler.doStart(ScopedHandler.java:120)
-! at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:844)
-! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:344)
-! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
-! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:101)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:115)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:133)
-! at org.eclipse.jetty.server.Server.start(Server.java:418)
-! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:107)
-! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
-! at org.eclipse.jetty.server.Server.doStart(Server.java:385)
-! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
-! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
-! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:87)
-! at io.dropwizard.testing.DropwizardTestSupport.startIfRequired(DropwizardTestSupport.java:237)
-! at io.dropwizard.testing.DropwizardTestSupport.before(DropwizardTestSupport.java:151)
-! at io.dropwizard.testing.junit.DropwizardAppRule.before(DropwizardAppRule.java:159)
-! at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:46)
-! at org.junit.rules.RunRules.evaluate(RunRules.java:20)
-! at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-! at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
-! at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
-! at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
-! at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
-! at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:379)
-! at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:340)
-! at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-! at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:413)
-INFO  [2018-05-03 13:41:27,429] org.eclipse.jetty.server.AbstractConnector: Stopped application@56a1744f{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
-INFO  [2018-05-03 13:41:27,463] org.eclipse.jetty.server.AbstractConnector: Stopped admin@48e2a177{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
-INFO  [2018-05-03 13:41:27,469] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@33706f61{/,null,UNAVAILABLE}
-INFO  [2018-05-03 13:41:28,920] org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:41:29,925] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:41:30,131] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:41:30,168] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:41:30,168] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:41:30,289] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:30,292] org.glassfish.grizzly.http.server.HttpServer: [HttpServer] Started.
-INFO  [2018-05-03 13:41:30,471] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:41:30,743] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:30,755] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:41:30,756] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:41:30,756] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:41:30,756] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:41:30,761] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:30,761] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-1] Started.
-INFO  [2018-05-03 13:41:30,805] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:41:30,937] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:30,948] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
-INFO  [2018-05-03 13:41:30,948] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
-INFO  [2018-05-03 13:41:30,948] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
-INFO  [2018-05-03 13:41:30,948] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
-INFO  [2018-05-03 13:41:31,230] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
-INFO  [2018-05-03 13:41:31,231] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-2] Started.
-INFO  [2018-05-03 13:41:31,336] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
-INFO  [2018-05-03 13:41:31,834] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:31,779] org.eclipse.jetty.server.AbstractConnector: Stopped application@b19bee6{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-05-16 14:21:31,781] org.eclipse.jetty.server.AbstractConnector: Stopped admin@21266057{HTTP/1.1,[http/1.1]}{0.0.0.0:0}
+INFO  [2018-05-16 14:21:31,784] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@51a3e6ef{/,null,UNAVAILABLE}
+INFO  [2018-05-16 14:21:33,253] org.glassfish.jersey.test.inmemory.InMemoryTestContainerFactory$InMemoryTestContainer: Creating InMemoryTestContainer configured at the base URI http://localhost:9998/
+INFO  [2018-05-16 14:21:34,690] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
+INFO  [2018-05-16 14:21:35,121] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
+INFO  [2018-05-16 14:21:35,429] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
+INFO  [2018-05-16 14:21:35,429] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
+INFO  [2018-05-16 14:21:35,602] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:35,612] org.glassfish.grizzly.http.server.HttpServer: [HttpServer] Started.
+INFO  [2018-05-16 14:21:36,247] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
+INFO  [2018-05-16 14:21:36,788] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:36,829] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
+INFO  [2018-05-16 14:21:36,830] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
+INFO  [2018-05-16 14:21:36,830] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
+INFO  [2018-05-16 14:21:36,830] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
+INFO  [2018-05-16 14:21:36,835] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:36,836] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-1] Started.
+INFO  [2018-05-16 14:21:36,897] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
+INFO  [2018-05-16 14:21:37,164] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:37,175] org.glassfish.jersey.test.grizzly.GrizzlyWebTestContainerFactory$GrizzlyWebTestContainer: Creating GrizzlyWebTestContainer configured at the base URI http://localhost:9998/
+INFO  [2018-05-16 14:21:37,175] org.glassfish.grizzly.servlet.WebappContext: Starting application [TestContext] ...
+INFO  [2018-05-16 14:21:37,175] org.glassfish.grizzly.servlet.WebappContext: [TestContext] Servlet [org.glassfish.jersey.servlet.ServletContainer] registered for url pattern(s) [[/*]].
+INFO  [2018-05-16 14:21:37,175] org.glassfish.grizzly.servlet.WebappContext: Application [TestContext] is ready to service requests.  Root: [].
+INFO  [2018-05-16 14:21:37,194] org.glassfish.grizzly.http.server.NetworkListener: Started listener bound to [localhost:9998]
+INFO  [2018-05-16 14:21:37,194] org.glassfish.grizzly.http.server.HttpServer: [HttpServer-2] Started.
+INFO  [2018-05-16 14:21:37,237] org.glassfish.grizzly.servlet.ServletHandler: Loading Servlet: org.glassfish.jersey.servlet.ServletContainer
+INFO  [2018-05-16 14:21:37,563] org.glassfish.grizzly.http.server.NetworkListener: Stopped listener bound to [localhost:9998]
