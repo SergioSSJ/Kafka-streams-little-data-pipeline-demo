@@ -156,13 +156,20 @@
                             <perCoreThreadCount>true</perCoreThreadCount>
                         </configuration>
                     </plugin>
+
+
+<!--
                     <plugin>
                         <groupId>org.owasp</groupId>
                         <artifactId>dependency-check-maven</artifactId>
                         <configuration>
                             <skip>true</skip>
                         </configuration>
-                    </plugin>
+                    </plugin>-->
+
+
+
+
                 </plugins>
             </build>
         </profile>
@@ -309,6 +316,7 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
@@ -330,7 +338,7 @@
             <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
-
+-->
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
@@ -341,6 +349,7 @@
     <build>
         <pluginManagement>
             <plugins>
+                <!--
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-deploy-plugin</artifactId>
@@ -423,6 +432,7 @@
                     <artifactId>sphinx-maven-plugin</artifactId>
                     <version>2.0.2</version>
                 </plugin>
+                -->
             </plugins>
         </pluginManagement>
 
@@ -449,7 +459,7 @@
                                         <exclude>org.slf4j:slf4j-jdk14</exclude>
 
                                         <exclude>log4j:log4j</exclude>
-                                       
+
                                         <exclude>commons-logging:commons-logging</exclude>
                                     </excludes>
                                 </bannedDependencies>
@@ -463,7 +473,7 @@
             </plugin>
 
     -->
-
+<!--
 
 
 
@@ -545,6 +555,7 @@
                 </executions>
             </plugin>
 
+
             <plugin>
                 <groupId>org.owasp</groupId>
                 <artifactId>dependency-check-maven</artifactId>
@@ -564,11 +575,15 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
     </build>
 
     <reporting>
         <plugins>
+
+
+            <!--
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
@@ -611,6 +626,10 @@
                     </reportSet>
                 </reportSets>
             </plugin>
+
+
+-->
+
         </plugins>
     </reporting>
 </project>
