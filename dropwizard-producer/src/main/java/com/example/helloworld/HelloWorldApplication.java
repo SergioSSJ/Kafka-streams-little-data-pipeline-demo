@@ -1,16 +1,8 @@
 package com.example.helloworld;
 
-import com.example.helloworld.auth.ExampleAuthenticator;
-import com.example.helloworld.auth.ExampleAuthorizer;
-import com.example.helloworld.cli.RenderCommand;
-import com.example.helloworld.core.Person;
-import com.example.helloworld.core.Template;
-import com.example.helloworld.core.User;
-import com.example.helloworld.db.PersonDAO;
-import com.example.helloworld.filter.DateRequiredFeature;
-import com.example.helloworld.health.TemplateHealthCheck;
+
 import com.example.helloworld.resources.*;
-import com.example.helloworld.tasks.EchoTask;
+
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.auth.AuthDynamicFeature;
@@ -33,13 +25,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         new HelloWorldApplication().run(args);
     }
 
-    private final HibernateBundle<HelloWorldConfiguration> hibernateBundle =
-        new HibernateBundle<HelloWorldConfiguration>(Person.class) {
-            @Override
-            public DataSourceFactory getDataSourceFactory(HelloWorldConfiguration configuration) {
-                return configuration.getDataSourceFactory();
-            }
-        };
+
 
     @Override
     public String getName() {
@@ -57,7 +43,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         );
         //target/classes/resources/static
 
-        bootstrap.addCommand(new RenderCommand());
+
        // bootstrap.addBundle(new AssetsBundle());
         bootstrap.addBundle(new AssetsBundle("/assets/","/","index.html","home"));
         bootstrap.addBundle(new AssetsBundle("/assets/","/login","index.html","login"));
@@ -67,7 +53,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
                 return configuration.getDataSourceFactory();
             }
         });
-        bootstrap.addBundle(hibernateBundle);
+
         bootstrap.addBundle(new ViewBundle<HelloWorldConfiguration>() {
             @Override
             public Map<String, Map<String, String>> getViewConfiguration(HelloWorldConfiguration configuration) {
@@ -78,26 +64,8 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
 
     @Override
     public void run(HelloWorldConfiguration configuration, Environment environment) {
-        final PersonDAO dao = new PersonDAO(hibernateBundle.getSessionFactory());
-        final Template template = configuration.buildTemplate();
-
-        environment.healthChecks().register("template", new TemplateHealthCheck(template));
-        environment.admin().addTask(new EchoTask());
-        environment.jersey().register(DateRequiredFeature.class);
-        environment.jersey().register(new AuthDynamicFeature(new BasicCredentialAuthFilter.Builder<User>()
-                .setAuthenticator(new ExampleAuthenticator())
-                .setAuthorizer(new ExampleAuthorizer())
-                .setRealm("SUPER SECRET STUFF")
-                .buildAuthFilter()));
-        environment.jersey().register(new AuthValueFactoryProvider.Binder<>(User.class));
         environment.jersey().register(RolesAllowedDynamicFeature.class);
-        environment.jersey().register(new HelloWorldResource(template));
         environment.jersey().register(new SimpleProducerEndpoint());
-        environment.jersey().register(new ViewResource());
-        environment.jersey().register(new ProtectedResource());
-        environment.jersey().register(new PeopleResource(dao));
-        environment.jersey().register(new PersonResource(dao));
-        environment.jersey().register(new FilteredResource());
 
     }
 }
