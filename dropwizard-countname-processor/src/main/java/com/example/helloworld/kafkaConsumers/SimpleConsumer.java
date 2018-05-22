@@ -7,6 +7,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.common.serialization.StringDeserializer;
 
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Properties;
 import com.example.Customer;
@@ -20,10 +21,9 @@ public class SimpleConsumer implements Managed {
         Properties properties = new Properties();
         // normal consumer
         properties.setProperty("bootstrap.servers","127.0.0.1:9092");
-        properties.put("group.id", "customer-consumer-group-v1");
+        properties.put("group.id", "customer-consumer-group-v11");
         properties.put("auto.commit.enable", "false");
         properties.put("auto.offset.reset", "earliest");
-
         // avro part (deserializer)
         properties.setProperty("key.deserializer", StringDeserializer.class.getName());
         properties.setProperty("value.deserializer", KafkaAvroDeserializer.class.getName());
@@ -38,7 +38,7 @@ public class SimpleConsumer implements Managed {
 
         while (true){
             System.out.println("Polling");
-            ConsumerRecords<String, Customer> records = kafkaConsumer.poll(100);
+            ConsumerRecords<String, Customer> records = kafkaConsumer.poll(1000);
 
             for (ConsumerRecord<String, Customer> record : records){
                 Customer customer = record.value();

@@ -1,12 +1,14 @@
 package com.example.helloworld;
 
 
-import com.example.helloworld.kafkaConsumers.SimpleConsumer;
+import com.example.helloworld.kafkaConsumers.JoinedConsumer;
+import com.example.helloworld.kafkaProcessors.SimpleStreamsJoinDemo;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.configuration.EnvironmentVariableSubstitutor;
 import io.dropwizard.configuration.SubstitutingSourceProvider;
 import io.dropwizard.db.DataSourceFactory;
+
 import io.dropwizard.migrations.MigrationsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -59,6 +61,9 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     @Override
     public void run(HelloWorldConfiguration configuration, Environment environment) {
         environment.jersey().register(RolesAllowedDynamicFeature.class);
-        environment.lifecycle().manage(new SimpleConsumer());
+        //environment.lifecycle().manage(new SimpleConsumer());
+        //environment.lifecycle().manage(new CountNameProcessor());
+        environment.lifecycle().manage(new SimpleStreamsJoinDemo());
+        environment.lifecycle().manage(new JoinedConsumer());
     }
 }

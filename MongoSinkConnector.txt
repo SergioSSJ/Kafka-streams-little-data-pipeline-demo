@@ -1,0 +1,12 @@
+{
+  "connector.class": "com.datamountaineer.streamreactor.connect.mongodb.sink.MongoSinkConnector",
+  "value.converter.schema.registry.url": "http://localhost:8081",
+  "connect.mongo.connection": "mongodb://jiren:jiren@ds231070.mlab.com:31070/sinke",
+  "connect.mongo.kcql": "INSERT INTO sink1 SELECT * FROM joined",
+  "topics": "joined",
+  "tasks.max": "1",
+  "name": "MongoSinkConnector",
+  "connect.mongo.db": "sinke",
+  "connect.progress.enabled": "true",
+  "key.converter": "org.apache.kafka.connect.storage.StringConverter"
+}
