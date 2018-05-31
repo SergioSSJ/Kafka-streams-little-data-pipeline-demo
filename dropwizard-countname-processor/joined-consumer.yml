@@ -1,0 +1,17 @@
+#   properties.setProperty("bootstrap.servers","127.0.0.1:9092");
+#  properties.put("group.id", "customer-consumer-groupo");
+# properties.put("auto.commit.enable", "false");
+# properties.put("auto.offset.reset", "earliest");
+#properties.setProperty("key.deserializer", StringDeserializer.class.getName());
+# properties.setProperty("value.deserializer", KafkaAvroDeserializer.class.getName());
+#properties.setProperty("schema.registry.url", "http://127.0.0.1:8081");
+#properties.setProperty("specific.avro.reader", "true");
+#joined_topic_consumer_data
+
+
+group.id: joined.group
+auto.commit.enable: false
+auto.offset.reset: earliest
+key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+value.deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+specific.avro.reader: true

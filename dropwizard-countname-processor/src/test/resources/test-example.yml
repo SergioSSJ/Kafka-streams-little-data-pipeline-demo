@@ -26,4 +26,3 @@ logging:
       archive: true
       archivedFileCount: 7
       maxFileSize: '1mb'
-

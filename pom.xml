@@ -19,6 +19,9 @@
 
 
 
+
+
+
     <properties>
         <dropwizard.url>http://www.dropwizard.io/${project.version}</dropwizard.url>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -15,6 +15,7 @@ import io.dropwizard.setup.Environment;
 import io.dropwizard.views.ViewBundle;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class HelloWorldApplication extends Application<HelloWorldConfiguration> {
@@ -59,7 +60,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
     }
 
     @Override
-    public void run(HelloWorldConfiguration configuration, Environment environment) {
+    public void run(HelloWorldConfiguration configuration, Environment environment) throws IOException {
         environment.jersey().register(RolesAllowedDynamicFeature.class);
         //environment.lifecycle().manage(new SimpleConsumer());
         //environment.lifecycle().manage(new CountNameProcessor());

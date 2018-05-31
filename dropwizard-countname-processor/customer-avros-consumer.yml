@@ -1,0 +1,25 @@
+
+#
+#
+# properties.setProperty("bootstrap.servers", CLUSTER.bootstrapServers());
+#properties.put("group.id", "customer-consumer-group-v11111");
+#properties.put("auto.commit.enable", "false");
+#properties.put("auto.offset.reset", "earliest");
+#// avro part (deserializer)
+#properties.setProperty("schema.registry.url", CLUSTER.schemaRegistryUrl());
+#properties.setProperty("key.deserializer", StringDeserializer.class.getName());
+#properties.setProperty("value.deserializer", KafkaAvroDeserializer.class.getName());
+#properties.setProperty("specific.avro.reader", "true");
+group.id: customer-avros-group-id
+
+auto.commit.enable: false
+
+auto.offset.reset: earliest
+
+key.deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+
+value.deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+specific.avro.reader: true
+
